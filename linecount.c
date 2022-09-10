@@ -18,9 +18,9 @@ typedef struct {
     unsigned long lines[MAX_A_EXT]; /* Store lines of code for each extensions */
     unsigned int args_parssed; /* Keeping count of how many valid arguments that
                                   has been passed to the application */
-    //char *extensions[]; /* Store file extentions to search */
 } LineCount;
 
+/* Function definitions */
 static void die(const char *fmt, ...);
 static inline void print_help(char *ex_name);
 static inline unsigned short not_yet_added(LineCount *lc, const char *ext);
