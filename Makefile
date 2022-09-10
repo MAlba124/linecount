@@ -9,5 +9,9 @@ OBJ = linecount
 all:
 	$(CC) $(CLFAGS) -o $(OBJ) $(SOURCE)
 
+debug:
+	$(CC) $(CLFAGS) -g -o $(OBJ)_dbg $(SOURCE)
+
 clean:
 	rm -rf $(OBJ)
+	rm -rf $(OBJ)_dbg
