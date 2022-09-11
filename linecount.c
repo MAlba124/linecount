@@ -118,7 +118,6 @@ not_yet_added(LineCount *lc, const char *ext)
     for (i = 0; i < lc->ext_count; i++) {
         if (strcmp(lc->extensions[i], ext) == 0)
             return 0;
-        i++;
     }
 
     return 1;
